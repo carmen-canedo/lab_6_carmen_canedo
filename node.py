@@ -4,17 +4,25 @@
 # Creating class Node
 class Node:
 
-    # Initializing attributes
-    def __init__(self, data, next = None):
+    # Initializing attributes for node
+    def __init__(self, data, next_pointer = None):
         self.data = data
-        self.next = next
+        self.next_pointer = next_pointer
 
-    # Gets
+    # Defining getter and setter methods
+    # Getter
     def get_data(self):
         return self.data
 
+    # Setter
     def set_data(self, new_data):
         self.data = new_data
+
+    def get_next_pointer(self):
+        return self.next_pointer
+
+    def set_next_pointer(self, new_pointer):
+        self.next_pointer = new_pointer
 
 class LinkedList:
     def __init__(self, head = None, size = 0):
