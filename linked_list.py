@@ -20,9 +20,28 @@ class LinkedList:
         self.head = head
         self.tail = tail
 
+    def get_size(self):
+        return self.size
+
+    def set_size(self, new_size):
+        self.size = new_size
+
+    def get_head(self):
+        return self.head
+
+    def set_head(self, new_head):
+        self.head = new_head
+
+    def get_tail(self):
+        return self.tail
+
+    def set_tail(self, new_tail):
+        self.tail = new_tail
+
     def is_empty(self, node):
-        if node is None:
-            print("This node is empty.")
+        if (self.get_size() > 0):
+            return False 
+        return True
 
     def add_node(self, data):
         size += 1
