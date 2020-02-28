@@ -13,8 +13,13 @@ class Node:
         self.data = data
         self.next = next
 
-    def get_data(self, new_data):
-        return self.data = new_data
-
-    def set_data(self):
+    def get_data(self):
         return self.data
+
+    def set_data(self, new_data):
+        self.data = new_data
+
+class LinkedList:
+    def __init__(self):
+        self.length = 0
+        self.head = None
