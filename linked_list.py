@@ -49,7 +49,17 @@ class LinkedList:
         # Simple Case
         if (self.is_empty == True):
             self.set_head(new_node)
-            self.set_tail(new_node)
+        else:
+            self.get_tail().set_next_pointer(new_node)
 
-    def remove_node():
-        pass
+        self.set_tail(new_node)
+        self.set_size(self.size + 1)
+
+def main():
+
+    ll = LinkedList()
+    ll.add_node(1000)
+    print(ll.get_size())
+
+if __name__ == '__main__':
+    main()
