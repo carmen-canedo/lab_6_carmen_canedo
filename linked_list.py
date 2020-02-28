@@ -40,14 +40,16 @@ class LinkedList:
 
     def is_empty(self, node):
         if (self.get_size() > 0):
-            return False 
+            return False
         return True
 
-    def add_node(self, data):
-        size += 1
-        new_node = data
-        set_next_pointer(new_pointer = tail)
-        return
+    def add_node(self, new_data):
+        new_node = Node(data = new_data)
+
+        # Simple Case
+        if (self.is_empty == True):
+            self.set_head(new_node)
+            self.set_tail(new_node)
 
     def remove_node():
         pass
