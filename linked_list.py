@@ -28,7 +28,7 @@ class LinkedList:
     def set_tail(self, new_tail):
         self.tail = new_tail
 
-    def is_empty(self, node):
+    def is_empty(self):
         if (self.get_size() > 0):
             return False
         return True
@@ -37,7 +37,7 @@ class LinkedList:
         new_node = Node(data = new_data)
 
         # Simple Case
-        if (self.is_empty == True):
+        if (self.is_empty() == True):
             self.set_head(new_node)
         else:
             t = self.get_tail()
@@ -50,9 +50,9 @@ def main():
 
     ll = LinkedList()
     ll.add_node(new_data = 1000)
-    print(ll.get_size())
-
-    print(ll.get_tail().get_data())
+    # print(ll.get_size())
+    #
+    # print(ll.get_tail().get_data())
 
 if __name__ == '__main__':
     main()
