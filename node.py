@@ -27,16 +27,20 @@ class Node:
         self.next_pointer = new_pointer
 
 class LinkedList:
-    def __init__(self, head = None, size = 0):
+    def __init__(self, head = None, size = 0, tail):
         self.head = head
         self.size = size
+        self.tail = tail
 
-    def is_empty(node):
+    def is_empty(self, node):
         if node is None:
             print("This node is empty.")
 
-    def add_node():
-        pass
+    def add_node(self, data):
+        size += 1
+        new_node = data
+        set_next_pointer(new_pointer = tail)
+        return
 
     def remove_node():
         pass
