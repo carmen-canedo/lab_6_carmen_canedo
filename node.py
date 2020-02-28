@@ -10,17 +10,19 @@ class Node:
         self.next_pointer = next_pointer
 
     # Defining getter and setter methods
-    # Getter
+    # Returns current data (Getter)
     def get_data(self):
         return self.data
 
-    # Setter
+    # Modifies data in node (Setter)
     def set_data(self, new_data):
         self.data = new_data
 
+    # Returns the next pointer
     def get_next_pointer(self):
         return self.next_pointer
 
+    # Modifies a new pointer
     def set_next_pointer(self, new_pointer):
         self.next_pointer = new_pointer
 
