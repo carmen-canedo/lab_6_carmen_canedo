@@ -1,16 +1,6 @@
 # Lab 6
 # Problem 2
-#
-# Create a LinkedList class
-# Attributes:
-#   head
-#   size
-# Create getters and setters
-#
-# Create these methods:
-#   is_empty()
-#   add_node()
-#   remove_node()
+
 
 from node import Node
 
@@ -50,7 +40,8 @@ class LinkedList:
         if (self.is_empty == True):
             self.set_head(new_node)
         else:
-            self.get_tail().set_next_pointer(new_node)
+            t = self.get_tail()
+            t.set_next_pointer(new_node)
 
         self.set_tail(new_node)
         self.set_size(self.size + 1)
@@ -58,8 +49,10 @@ class LinkedList:
 def main():
 
     ll = LinkedList()
-    ll.add_node(1000)
+    ll.add_node(new_data = 1000)
     print(ll.get_size())
+
+    print(ll.get_tail().get_data())
 
 if __name__ == '__main__':
     main()
