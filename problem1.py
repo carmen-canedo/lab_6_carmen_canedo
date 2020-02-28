@@ -20,6 +20,15 @@ class Node:
         self.data = new_data
 
 class LinkedList:
-    def __init__(self):
-        self.length = 0
-        self.head = None
+    def __init__(self, head = None, size = 0):
+        self.head = head
+        self.size = size
+
+    def is_empty():
+        pass
+
+    def add_node():
+        pass
+
+    def remove_node():
+        pass 
