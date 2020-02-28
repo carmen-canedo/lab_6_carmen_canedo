@@ -38,3 +38,17 @@ class LinkedList:
 
     def remove_node():
         pass
+
+def main():
+
+    n = Node(data = 100)
+
+    print(n.get_data())
+
+    n.set_data("AU")
+
+    print(n.get_data())
+
+
+if __name__ == '__main__':
+    main()
