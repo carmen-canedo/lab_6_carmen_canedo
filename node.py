@@ -1,10 +1,10 @@
 # Lab 6
-# Problem 1 and 2
+# Problem 1
 
 # Creating class Node
 class Node:
 
-    # Initializing attributes for node
+    # Initializing attributes for Node
     def __init__(self, data, next_pointer = None):
         self.data = data
         self.next_pointer = next_pointer
@@ -29,12 +29,16 @@ class Node:
 
 def main():
 
+    # Setting node cargo to 100
     n = Node(data = 100)
 
+    # Printing the value of n using get_data method
     print(n.get_data())
 
+    # Changing data in node
     n.set_data("AU")
 
+    # Printing new results
     print(n.get_data())
 
 
