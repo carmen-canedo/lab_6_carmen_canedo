@@ -30,7 +30,9 @@ def main():
     s.push(100)
     s.push("American U")
 
+    print("The size was: ", s.size)
     s.pop()
+    print("The size is: ", s.size)
 
 if __name__ == '__main__':
     main()
