@@ -14,8 +14,15 @@ class Stack:
         self.top = new_node
         self.size += 1
 
-    def peak(self)
+    def peak(self):
         return self.top.get_data()
+
+    def pop(self):
+        print(self.top.get_data())
+
+        prev = self.top
+
+        self.top = self.top.get_next_pointer()
 
 def main():
 
