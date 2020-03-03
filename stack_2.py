@@ -14,9 +14,14 @@ class Stack:
         self.top = new_node
         self.size += 1
 
+    def peak(self)
+        return self.top.get_data()
+
 def main():
 
     s = Stack()
+    s.push(100)
+    s.push("American U")
 
 if __name__ == '__main__':
     main()
