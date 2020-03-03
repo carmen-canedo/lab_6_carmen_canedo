@@ -18,11 +18,17 @@ class Stack:
         return self.top.get_data()
 
     def pop(self):
-        print(self.top.get_data())
-        prev = self.top
-        self.top = self.top.get_next_pointer()
-        prev.set_next_pointer(None)
-        self.size -= 1
+
+        if (self.size > 0):
+            print(self.top.get_data())
+            prev = self.top
+            self.top = self.top.get_next_pointer()
+            prev.set_next_pointer(None)
+            self.size -= 1
+        else:
+            print("Stack is empty")
+
+
 
 def main():
 
