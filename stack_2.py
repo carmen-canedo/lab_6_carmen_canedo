@@ -19,16 +19,18 @@ class Stack:
 
     def pop(self):
         print(self.top.get_data())
-
         prev = self.top
-
         self.top = self.top.get_next_pointer()
+        prev.set_next_pointer(None)
+        self.size -= 1
 
 def main():
 
     s = Stack()
     s.push(100)
     s.push("American U")
+
+    s.pop()
 
 if __name__ == '__main__':
     main()
