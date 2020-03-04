@@ -23,11 +23,22 @@ class Stack:
 
     def pop(self):
 
+        # Check that the stack isn't empty
         if (self.size > 0):
+
+            # Get the data from the stop
             print(self.top.get_data())
+
+            # Sets temporary variable makes the previous node as the top
             prev = self.top
+
+            # Moving top down to the node below
             self.top = self.top.get_next_pointer()
+
+            # Remove the link from the old node
             prev.set_next_pointer(None)
+
+            # Decrement the size 
             self.size -= 1
         else:
             print("Stack is empty")
