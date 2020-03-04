@@ -6,12 +6,16 @@ class Stack:
         self.size = size
 
     def push(self, new_data):
+        # Need to create new node
         new_node = Node(data = new_data)
 
+        # Sets top of stack to the new node
         if (self.top != None):
             new_node.set_next_pointer(self.top)
 
         self.top = new_node
+
+        # Increases the size of the stack
         self.size += 1
 
     def peak(self):
