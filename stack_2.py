@@ -38,7 +38,7 @@ class Stack:
             # Remove the link from the old node
             prev.set_next_pointer(None)
 
-            # Decrement the size 
+            # Decrement the size d
             self.size -= 1
         else:
             print("Stack is empty")
